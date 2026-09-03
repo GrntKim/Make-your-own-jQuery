@@ -5,9 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Make your own jQuery</title>
     <link rel="stylesheet" href="styles/style.css" />
+    <script src="script/myoj.js"></script>
 </head>
 <body>
-    <h1>Make your own jQuery</h1>
-    <script src="script/myoj.js"></script>
+    <p>myoj: Make your own jQuery</p>
+
+    <script>
+        m('p')
+            .css('color', 'blue')
+            .css('fontWeight', 'bold')
+            .each(function () { this.style.textDecoration = 'underline'; })
+            .each(function () { this.append(' 🎉'); });
+    </script>
 </body>
 </html>
